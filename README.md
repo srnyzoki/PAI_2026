@@ -1,7 +1,5 @@
 # グレアの再現とピックアンドプレースの実装
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shinozakir/PAI_2026/main/glare_aware_pick_and_place.ipynb)
-
 ## 1. 概要と目的
 カメラを用いた視覚フィードバックによるロボットアーム（CRANE+ V2想定）のPick & Placeタスクにおいて、照明環境による**鏡面反射（グレア・白飛び）**は物体重心推論の大きな誤差要因となる。
 画像からグレアの深刻度を3段階に区別し、「ソフトウェア画像修復（Inpaint + CLAHE）」と「ロボット自身の身体性を活用した物理的遮光（Active Shadowing）」を適応的に切り替えられることを確認できる。
